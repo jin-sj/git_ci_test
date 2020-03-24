@@ -18,4 +18,6 @@ setup(
     python_requires='>=3.6',
     test_suite='nose.collector',
     tests_require=['nose'],
+
+    install_requires=['speechutils @ git+ssh://git@github.com/deepgram/speechutils.git'],
 )
