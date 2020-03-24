@@ -24,9 +24,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Install private dependencies
-      run: |
-        pip install -e "git+https://jin-sj:${{secrets.ACCESS_TOKEN}}@github.com/deepgram/speechutils.git#egg=speechutils"
     - name: Lint with flake8
       run: |
         pip install flake8
