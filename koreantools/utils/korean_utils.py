@@ -141,3 +141,6 @@ class KorChecker:
             else:
                 fixed_word += token
         return fixed_word
+
+def test():
+    pass
