@@ -38,13 +38,3 @@ class TestKorChecker(TestCase):
         result = cls.kor.fix_korean_spelling(token)
         cls.assertEqual(result, expected_token)
 
-    def test_large_corpus(cls):
-        corpus_dir = os.path.join(cls.test_dir, os.path.join("corpus", "17AEWstr8DK.txt"))
-        with open(corpus_dir) as corpus:
-            line = corpus.readline()
-            while line:
-                line.translate(str.maketrans('', '', string.punctuation))
-                for token in line.split():
-                    cls.kor.fix_korean_spelling(token)
-                line = corpus.readline()
-
