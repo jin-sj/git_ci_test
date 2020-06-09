@@ -1,2 +1,1 @@
-# koreantools
-Tools for managing Korean text data
+# Testing github's new CI stuff
